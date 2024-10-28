@@ -19,7 +19,7 @@ const SpaceObjectsPage = () => {
     const fetchSpaceObjects = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`/api/spaceobjects/`);
+        const response = await fetch(`/proxy/spaceobjects/`);
         const data = await response.json();
         setAllSpaceObjects(data['space objects']);
         setSpaceObjects(data['space objects']); // отображаем изначально все объекты
@@ -57,7 +57,7 @@ const SpaceObjectsPage = () => {
   };
 
   const handleCardClick = (id: number) => {
-    navigate(`/spaceobjects/${id}`);
+    navigate(`/spaceobjects/${id}/`);
   };
 
   return (

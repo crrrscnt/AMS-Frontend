@@ -15,7 +15,7 @@ export const getSpaceObjectById = async (
   id: number | string
 ): Promise<SpaceObject | null> => {
   try {
-    const response = await fetch(`http://localhost:8000/api/spaceobjects/${id}`);
+    const response = await fetch(`/proxy/spaceobjects/${id}/`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

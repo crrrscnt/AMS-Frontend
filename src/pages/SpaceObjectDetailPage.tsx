@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { SpaceObject, getSpaceObjectById } from "../modules/spaceobjectAPI.ts";
 import "./SpaceObjectDetailPage.css";
 import { BreadCrumbs } from "../components/BreadCrumbs";
-import { ROUTE_LABELS } from "../Routes.tsx";
+import {ROUTE_LABELS, ROUTES} from "../Routes.tsx";
 import defaultImage from "../assets/images/default_img.jpg"
 
 const SpaceObjectDetailPage: FC = () => {
@@ -46,8 +46,13 @@ const SpaceObjectDetailPage: FC = () => {
 
   return (
     <div className="container">
-      <BreadCrumbs crumbs={[{ label: `${ROUTE_LABELS.SPACEOBJECTS} / ${spaceObject.name}` }]} />
-
+      {/*<BreadCrumbs crumbs={[{ label: `${ROUTE_LABELS.SPACEOBJECTS} / ${spaceObject.name}` }]} />*/}
+      <BreadCrumbs crumbs ={[
+        {label:ROUTE_LABELS.SPACEOBJECTS, path: ROUTES.SPACEOBJECTS},
+        {label: spaceObject.name || "Космический объект"},
+      ]}
+      >
+      </BreadCrumbs>
       <Card className="card">
         <Card.Img
           className="cardImage"

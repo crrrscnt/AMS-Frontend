@@ -6,6 +6,6 @@
 https://github.com/crrrscnt/AMS-Backend
 * Ссылка на репозиторий фронтенда:
 https://github.com/crrrscnt/AMS-Frontend
-* Pages:
+* Ветка GitHub Pages:
 https://github.com/crrrscnt/AMS-Frontend/tree/gh-pages
 * Tauri

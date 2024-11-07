@@ -3,8 +3,8 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import './SpaceObjectsPage.css';
 import { mockSpaceObjects } from '../modules/mock';
-// import { BreadCrumbs } from "../components/BreadCrumbs";
-// import { ROUTE_LABELS } from "../Routes.tsx";
+import { BreadCrumbs } from "../components/BreadCrumbs";
+import { ROUTE_LABELS } from "../Routes.tsx";
 import defaultImage from "../assets/images/default_img.jpg"
 import { SpaceObject } from "../modules/spaceobjectAPI.ts";
 import { useAppDispatch, useAppSelector } from '../toolkit/hooks';
@@ -90,7 +90,7 @@ const SpaceObjectsPage = () => {
 
   return (
     <div className="container">
-      {/*<BreadCrumbs crumbs={[{ label: ROUTE_LABELS.SPACEOBJECTS }]} />*/}
+      <BreadCrumbs crumbs={[{ label: ROUTE_LABELS.SPACEOBJECTS }]} />
 
       <div className="search-container">
         <input

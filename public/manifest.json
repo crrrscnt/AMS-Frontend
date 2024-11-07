@@ -1,0 +1,19 @@
+{
+  "name": "Spacecrafts to Space Objects",
+  "short_name": "Spacecrafts",
+  "start_url": "/AMS-Frontend",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#24b6c7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/AMS-Frontend/logo192.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "/AMS-Frontend/logo512.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}

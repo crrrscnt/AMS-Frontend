@@ -1,0 +1,139 @@
+.nav {
+  width: calc(100% - 10px);
+  max-width: 1200px;
+  height: 60px;
+  background-color: #282828;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav__wrapper {
+  width: 100%;
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: start;
+  align-items: center;
+}
+
+.nav__links {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 0 35px
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #888; /* Цвет при наведении */
+}
+
+.nav__link--cart {
+  color: #282828;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.nav__link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -7px;
+  background-color: #fff;
+}
+
+.nav__mobile-wrapper {
+  display: none;
+  height: 30px;
+  width: 30px;
+  transition: all .4s linear;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__mobile-target {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  transition: all .2s linear;
+}
+
+.nav__mobile-wrapper.active .nav__mobile-target {
+  transform: rotate(45deg)
+}
+
+.nav__mobile-target::after, .nav__mobile-target::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.nav__mobile-target::after {
+  top: -7px;
+}
+
+.nav__mobile-target::before {
+  bottom: -7px;
+}
+
+.nav__mobile-wrapper.active .nav__mobile-target::after {
+  display: none;
+}
+
+.nav__mobile-wrapper.active .nav__mobile-target::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.nav__mobile-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  flex-direction: column;
+  gap: 15px 0;
+  background-color: #282828;
+  padding: 20px;
+  min-width: 150px;
+  border-radius: 10px;
+  display: none;
+}
+
+.nav__mobile-wrapper.active .nav__mobile-menu {
+  display: flex;
+}
+
+@media (max-width: 545px) {
+  .nav__wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__mobile-wrapper {
+    display: flex;
+    align-items: center;
+
+  }
+}

@@ -1,0 +1,66 @@
+.container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  /*min-width: 800px;*/
+}
+
+.containerLoading {
+  filter: blur(8px);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type=text]{
+  background-color: transparent;
+}
+
+.card {
+  transition: transform 0.2s; /* Добавим эффект при наведении */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px; /* Уменьшаем отступы на больших экранах */
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    min-width: auto; /* Убираем минимальную ширину для планшетов */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Вертикальное расположение для мобильных */
+    align-items: stretch; /* Растягиваем на всю ширину */
+  }
+
+  .search-container input {
+    width: 100%; /* Полная ширина для поля поиска */
+    margin-bottom: 10px; /* Отступ снизу */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px; /* Отступ между карточками на мобильных */
+  }
+}
+
+/*@media (max-width: 600px) {*/
+/*  .container{*/
+/*    min-width: auto;*/
+/*  }*/
+/*}*/

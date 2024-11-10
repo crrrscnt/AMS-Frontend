@@ -8,4 +8,5 @@ https://github.com/crrrscnt/AMS-Backend
 https://github.com/crrrscnt/AMS-Frontend
 * Ветка GitHub Pages:
 https://github.com/crrrscnt/AMS-Frontend/tree/gh-pages
-* Tauri
+* Ветка Tauri
+https://github.com/crrrscnt/AMS-Frontend/tree/Tauri

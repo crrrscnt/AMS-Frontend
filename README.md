@@ -6,7 +6,7 @@
 https://github.com/crrrscnt/AMS-Backend
 * Ссылка на репозиторий фронтенда:
 https://github.com/crrrscnt/AMS-Frontend
-* Ветка GitHub Pages:
-https://github.com/crrrscnt/AMS-Frontend/tree/gh-pages
+* Ссылка на GitHub Pages:
+https://crrrscnt.github.io/AMS-Frontend/spaceobjects
 * Ветка Tauri
 https://github.com/crrrscnt/AMS-Frontend/tree/Tauri

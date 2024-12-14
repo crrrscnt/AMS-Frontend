@@ -4,7 +4,7 @@
 ---
 * Ссылка на репозиторий бэкенда:
 https://github.com/crrrscnt/AMS-Backend
-* Ссылка на репозиторий фронтенда:
+* Ссылка на репозиторий фронтенда (вы находитесь тут):
 https://github.com/crrrscnt/AMS-Frontend
 * Ссылка на GitHub Pages:
 https://crrrscnt.github.io/AMS-Frontend/

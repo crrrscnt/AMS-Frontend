@@ -1,0 +1,98 @@
+.container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  min-width: 1000px;
+}
+
+.loading-overlay {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0; /* Прикрепляем к верхней части экрана */
+  left: 0; /* Прикрепляем к левой части экрана */
+  width: 100%; /* Ширина на весь экран */
+  height: 100%; /* Высота на весь экран */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  z-index: 999; /* Убедитесь, что спиннер выше других элементов */
+}
+
+.containerLoading {
+  filter: blur(8px);
+}
+
+.search-container input[type=text]{
+  background-color: transparent;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  transition: transform 0.2s; /* Добавим эффект при наведении */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px; /* Уменьшаем отступы на больших экранах */
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    min-width: auto; /* Убираем минимальную ширину для планшетов */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Вертикальное расположение для мобильных */
+    align-items: stretch; /* Растягиваем на всю ширину */
+  }
+
+  .search-container input {
+    width: 100%; /* Полная ширина для поля поиска */
+    margin-bottom: 10px; /* Отступ снизу */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px; /* Отступ между карточками на мобильных */
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #222529;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

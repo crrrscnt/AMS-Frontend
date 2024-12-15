@@ -1,0 +1,42 @@
+.card {
+  margin-top: 24px;
+  padding: 8px;
+}
+
+.loading-overlay {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0; /* Прикрепляем к верхней части экрана */
+  left: 0; /* Прикрепляем к левой части экрана */
+  width: 100%; /* Ширина на весь экран */
+  height: 100%; /* Высота на весь экран */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  z-index: 999; /* Убедитесь, что спиннер выше других элементов */
+}
+
+
+.loadingBg {
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textStyle {
+  /*height:48px;*/
+  /*overflow:hidden;*/
+  overflow: visible;
+  /*text-overflow:ellipsis;*/
+  margin-bottom:12px;
+  white-space: normal;
+}
+.cardImage {
+  object-fit: contain;
+}
+.cardButton {
+  width: 100%;
+}
